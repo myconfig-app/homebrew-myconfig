@@ -1,7 +1,7 @@
 # version·sha256은 Release를 게시하면 .github/workflows/update-casks.yml이 고친다
 cask "myconfig" do
-  version "0.7.2"
-  sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+  version "0.7.3"
+  sha256 "30f35832deafcae21fc19bbbef67c0b69724fbfe9b73d29119e3adcbec0feeeb"
 
   # 앱은 universal이지만 앱 안 CLI는 arm64만 들어 있어 Intel에서는 연결하지 않는다
   on_arm do
