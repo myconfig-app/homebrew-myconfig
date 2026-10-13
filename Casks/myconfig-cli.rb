@@ -1,7 +1,7 @@
 # version·sha256은 Release를 게시하면 .github/workflows/update-casks.yml이 고친다
 cask "myconfig-cli" do
   version "0.7.0"
-  sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+  sha256 "65c2cbf6d848c0d27269aeec902ea93f6d9f43681b8e72624ffbf3c4c64366f9"
 
   url "https://github.com/myconfig-app/homebrew-myconfig/releases/download/cli-v#{version}/myconfig-cli-macos-arm64.zip"
   name "MyConfig CLI"
