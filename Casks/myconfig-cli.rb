@@ -15,8 +15,7 @@ cask "myconfig-cli" do
     strategy :github_releases
   end
 
-  # 앱 cask도 같은 이름(myconfig)을 PATH에 연결한다. 앱이 있으면 앱 안 CLI를 쓴다
-  conflicts_with cask: "myconfig"
+  # 앱 cask myconfig와 함께 설치할 수 있다 (앱 cask는 명령을 연결하지 않음)
   depends_on arch: :arm64
   depends_on macos: :ventura
 

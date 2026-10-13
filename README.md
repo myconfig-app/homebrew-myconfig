@@ -14,14 +14,14 @@ brew trust --tap myconfig-app/myconfig
 ## Install
 
 ```bash
-# macOS app (includes the myconfig command on Apple silicon)
+# macOS app
 brew install --cask myconfig
 
-# Command line tool only (Apple silicon)
+# Command line tool (Apple silicon)
 brew install --cask myconfig-cli
 ```
 
-Both casks provide the `myconfig` command, so install only one of them.
+Install either one, or both. The app and the command line tool are released and upgraded separately.
 Without Homebrew, download [`MyConfig.dmg`](https://github.com/myconfig-app/homebrew-myconfig/releases/latest/download/MyConfig.dmg) from the latest release.
 Every file is signed with a Developer ID and notarized by Apple.
 
@@ -47,14 +47,14 @@ brew trust --tap myconfig-app/myconfig
 brew tap myconfig-app/myconfig
 brew trust --tap myconfig-app/myconfig
 
-# 앱 (Apple silicon에서는 myconfig 명령도 함께 연결)
+# 앱
 brew install --cask myconfig
 
-# 명령줄 도구만 (Apple silicon)
+# 명령줄 도구 (Apple silicon)
 brew install --cask myconfig-cli
 ```
 
-두 cask 모두 `myconfig` 명령을 연결하므로 하나만 설치합니다.
+하나만 설치해도 되고 둘 다 설치해도 됩니다. 앱과 명령줄 도구는 따로 릴리스하고 따로 업그레이드합니다.
 "not trusted" 메시지가 나오면 `brew trust --tap myconfig-app/myconfig`를 다시 실행합니다.
 
 ## Releases
@@ -63,7 +63,7 @@ The app and the CLI are released separately, each with its own version.
 
 | Tag | File | Cask |
 |---|---|---|
-| `app-v<version>` | `MyConfig.dmg`: macOS app (universal), with the CLI inside (arm64) | `myconfig` |
+| `app-v<version>` | `MyConfig.dmg`: macOS app (universal) | `myconfig` |
 | `cli-v<version>` | `myconfig-cli-macos-arm64.zip`: standalone CLI (arm64) | `myconfig-cli` |
 
 The latest app release is always marked as "Latest", so
