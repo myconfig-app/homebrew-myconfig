@@ -15,8 +15,10 @@ cask "myconfig-cli" do
     strategy :github_releases
   end
 
-  # 앱 cask myconfig와 함께 설치할 수 있다 (앱 cask는 명령을 연결하지 않음)
+  # 명령줄 도구는 앱과 함께 쓴다(Vault 키는 실행 중인 앱이 승인해 넘겨줌). 앱이 없으면 앱을 먼저 설치한다.
+  # 다른 tap의 같은 이름 cask와 헷갈리지 않게 전체 이름으로 적는다
   depends_on arch: :arm64
+  depends_on cask: "myconfig-app/myconfig/myconfig"
   depends_on macos: :ventura
 
   binary "myconfig"
