@@ -8,7 +8,7 @@ cask "myconfig" do
     binary "#{appdir}/MyConfig.app/Contents/Helpers/myconfig"
   end
 
-  url "https://github.com/myconfig-app/homebrew-tap/releases/download/app-v#{version}/MyConfig.dmg"
+  url "https://github.com/myconfig-app/homebrew-myconfig/releases/download/app-v#{version}/MyConfig.dmg"
   name "MyConfig"
   desc "Editor that encrypts only the secret values inside config files"
   homepage "https://myconfig.app/"

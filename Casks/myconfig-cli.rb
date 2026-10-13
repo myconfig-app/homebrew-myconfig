@@ -3,7 +3,7 @@ cask "myconfig-cli" do
   version "0.7.0"
   sha256 "0000000000000000000000000000000000000000000000000000000000000000"
 
-  url "https://github.com/myconfig-app/homebrew-tap/releases/download/cli-v#{version}/myconfig-cli-macos-arm64.zip"
+  url "https://github.com/myconfig-app/homebrew-myconfig/releases/download/cli-v#{version}/myconfig-cli-macos-arm64.zip"
   name "MyConfig CLI"
   desc "Command-line tool for MyConfig encrypted config values"
   homepage "https://myconfig.app/"
