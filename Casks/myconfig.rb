@@ -1,7 +1,7 @@
 # version·sha256은 Release를 게시하면 .github/workflows/update-casks.yml이 고친다
 cask "myconfig" do
-  version "0.8.1"
-  sha256 "47d981de81f83ded24b5351ffda138b223f1663cad59a387f0cb948a3e49180b"
+  version "0.9.0"
+  sha256 "b47b3b1476b3935890ccdb2e6bf45842042b9863e773b0afcec61ae4096620d7"
 
   url "https://github.com/myconfig-app/homebrew-myconfig/releases/download/app-v#{version}/MyConfig.dmg"
   name "MyConfig"
