@@ -66,7 +66,6 @@ brew upgrade --cask myconfig
 | Tag | File | Cask |
 |---|---|---|
 | `app-v<version>` | `MyConfig.dmg`: macOS app (universal) with the `myconfig` command line tool inside (arm64) | `myconfig` |
-| `cli-v<version>` | `myconfig-cli-macos-arm64.zip`: older standalone command line tool releases (0.9.0 and before) | none |
 
 The latest app release is always marked as "Latest", so
 `https://github.com/myconfig-app/homebrew-myconfig/releases/latest/download/MyConfig.dmg` always points to the newest app.

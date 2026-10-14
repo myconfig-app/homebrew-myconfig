@@ -15,7 +15,7 @@ cask "myconfig" do
   desc "Editor that encrypts only the secret values inside config files"
   homepage "https://myconfig.app/"
 
-  # 앱(app-v…)과 CLI(cli-v…) Release가 한 저장소에 섞여 있어 태그 앞부분으로 고른다
+  # 앱 Release 태그(app-v…)만 고른다
   livecheck do
     url :url
     regex(/^app-v(\d+(?:\.\d+)+)$/i)
