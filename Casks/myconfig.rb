@@ -1,7 +1,7 @@
 # version·sha256은 Release를 게시하면 .github/workflows/update-casks.yml이 고친다
 cask "myconfig" do
-  version "0.10.2"
-  sha256 "30c8080bf81dc0169419f442501884f083ed866a7fb6e8f67693eb2bd54bb918"
+  version "0.10.3"
+  sha256 "463797ea2d6959d18cfe04fc79de689bd9fdfda9e0027f8c2e2c65ef852d1a20"
 
   # 명령줄 도구는 앱 안의 것을 연결한다. 따로 내려받은 단독 실행 파일은 공증 티켓을 붙일 수 없어
   # 격리 속성이 있으면 Gatekeeper가 막지만, 공증된 앱 묶음 안의 것은 앱을 열기 전에도 실행된다.
