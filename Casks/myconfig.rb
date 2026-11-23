@@ -22,6 +22,8 @@ cask "myconfig" do
     strategy :github_releases
   end
 
+  # 앱이 스스로 업데이트한다(Release의 latest.json). 그래서 brew upgrade는 --greedy일 때만 다시 설치한다
+  auto_updates true
   depends_on macos: :ventura
 
   app "MyConfig.app"

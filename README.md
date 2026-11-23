@@ -24,6 +24,8 @@ Every file is signed with a Developer ID and notarized by Apple.
 
 ## Upgrade
 
+The app updates itself. To upgrade with Homebrew, name the cask (a plain `brew upgrade` skips apps that update themselves):
+
 ```bash
 brew upgrade --cask myconfig
 ```
@@ -58,6 +60,7 @@ brew upgrade --cask myconfig
 ```
 
 앱과, Apple silicon에서는 앱 안에 든 `myconfig` 명령줄 도구가 함께 설치되고 버전도 늘 같습니다.
+앱은 스스로 업데이트합니다. 이름 없이 `brew upgrade`만 하면 이 앱은 건너뛰므로 Homebrew로 올릴 때는 `brew upgrade --cask myconfig`처럼 이름을 붙입니다.
 예전 `myconfig-cli` cask를 설치했다면 `brew uninstall --cask myconfig-cli` 뒤 `brew reinstall --cask myconfig`를 실행합니다.
 "not trusted" 메시지가 나오면 `brew trust --tap myconfig-app/myconfig`를 다시 실행합니다.
 
